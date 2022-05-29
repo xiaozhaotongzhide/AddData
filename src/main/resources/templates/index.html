@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<!--<html lang="en">-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- 引入我们的flexible.js 文件 -->
+    <script src="js/flexible.js"></script>
+    <script src="js/jquery.js"></script>
+    <title>HOME</title>
+</head>
+
+<body>
+
+    <nav>
+        <span class="iconfont font-menu">
+            &#xe62b;
+        </span>
+    </nav>
+
+    <main>
+        <div class="main-top">
+            <span class="iconfont font-tool">
+                &#xf013e;
+            </span>
+        </div>
+        <div class="main-center">
+            <div class="play">
+                <span class="iconfont font-play">
+                    &#xe650;
+                </span>
+            </div>
+        </div>
+        <div class="main-bottom">
+            <h1 th:text="${data}" class="btn-add">
+            </h1>
+            <span class="iconfont foot-menu-box">
+                &#xe635;
+            </span>
+        </div>
+        <div class="you">
+
+        </div>
+        <span class="iconfont font-left">
+            &#xe610;
+        </span>
+    </main>
+
+    <section class="btn-img">
+        <a href=""><img src="img/2.png" alt=""></a>
+        <a href=""><img src="img/1.png" alt=""></a>
+    </section>
+
+    <footer>
+        <a href="/add" class="btn-footer">
+            +10
+        </a>
+        <a href="/reduce" class="btn-footer">
+            -10
+        </a>
+    </footer>
+
+</body>
+
+</html>

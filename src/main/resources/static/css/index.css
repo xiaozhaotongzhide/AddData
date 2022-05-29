@@ -1,0 +1,171 @@
+body {
+  min-width: 320px;
+  max-width: 750px;
+  /* flexible 给我们划分了 10 等份 */
+  width: 10rem;
+  margin: 0 auto;
+  line-height: 1.5;
+  font-family: "microsoft YaHei", Arial, Helvetica;
+}
+
+html {
+  height: 100%;
+}
+/* 屏幕超过 750 那么我们就按照 750 设计稿在走 不会让我们页面超过 750px */
+
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+}
+
+body {
+  height: 100%;
+  background-image: linear-gradient(#fed3c3, #a1cbc1);
+}
+
+nav {
+  height: 0.48rem;
+  padding-top: 0.72rem;
+  padding-right: 0.64rem;
+  text-align: right;
+}
+
+.font-menu {
+  font-size: 0.48rem;
+  font-weight: bold;
+}
+
+main {
+  width: 6.6667rem;
+  height: 7.0667rem;
+  margin: 1.3333rem auto;
+  background-color: #fff;
+  /* border-radius: 0.1333rem;
+  -webkit-border-radius: 0.1333rem;
+  -moz-border-radius: 0.1333rem;
+  -ms-border-radius: 0.1333rem;
+  -o-border-radius: 0.1333rem; */
+  position: relative;
+}
+
+.main-top {
+  height: 0.6rem;
+  text-align: right;
+  padding-right: 0.1333rem;
+}
+
+.font-tool {
+  font-size: 0.5867rem;
+}
+.play {
+  width: 4rem;
+  height: 2.667rem;
+  background-color: #ff8985;
+  margin: 0.8rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.font-play {
+  font-size: 0.96rem;
+}
+
+.main-bottom {
+  background-color: #fdd3c3;
+  height: 1.2667rem;
+  margin-top: 1.773rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.foot-menu-box {
+  position: absolute;
+  bottom: -0.667rem;
+  left: -0.2667rem;
+  font-size: 1rem;
+}
+
+.btn-add {
+  display: block;
+  width: 1.6rem;
+  height: 0.5733rem;
+  line-height: 0.5733rem;
+  background-color: #ec4a45;
+  border-radius: 0.4rem;
+  -webkit-border-radius: 0.4rem;
+  -moz-border-radius: 0.4rem;
+  -ms-border-radius: 0.4rem;
+  -o-border-radius: 0.4rem;
+  color: #fff;
+  font-size: 0.1733rem;
+  text-align: center;
+}
+
+.btn-img {
+  width: 5rem;
+  height: 1rem;
+  margin: 1.3333rem auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn-img img {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer {
+  text-transform: uppercase;
+  margin-top: 2rem;
+}
+
+footer a {
+  display: block;
+  color: #000;
+  font-size: 0.2667rem;
+  width: 2.8rem;
+  height: 0.667rem;
+  border: 0.01333rem solid #000;
+  text-align: center;
+  line-height: 0.667rem;
+  margin: 0.133rem auto;
+}
+
+.you {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-bottom: 1.533rem solid transparent;
+  border-left: 1.533rem solid #ec4a45;
+  z-index: 10;
+}
+
+.font-left {
+  position: absolute;
+  left: 0.2rem;
+  top: 0.1333rem;
+  z-index: 20;
+  color: #fff;
+  font-size: 0.5333rem;
+}
