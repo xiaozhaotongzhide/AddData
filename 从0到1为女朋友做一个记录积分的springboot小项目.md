@@ -133,8 +133,6 @@ spring:
 ```java
 package com.example.adddata.Controller;
 
-import com.example.adddata.Bean.Data;
-import com.example.adddata.Mapper.DataMapper;
 import com.example.adddata.Service.DataService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -148,20 +146,21 @@ public class DataController {
     DataService dataService;
 
     @GetMapping("/")
-    public String data(Model model){
+    public String data(Model model) {
         String data = dataService.getData();
         System.out.println(data);
-        model.addAttribute("data",data);
+        model.addAttribute("data", data);
         return "index";
     }
+
     @GetMapping("/add")
-    public String addData(Model model){
+    public String addData(Model model) {
         dataService.addData("10");
         return "forward:/";
     }
 
     @GetMapping("/reduce")
-    public String reduceData(Model model){
+    public String reduceData(Model model) {
         dataService.reduceData("10");
         return "forward:/";
     }

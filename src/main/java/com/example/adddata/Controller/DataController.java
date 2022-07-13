@@ -1,14 +1,14 @@
 package com.example.adddata.Controller;
 
-import com.example.adddata.Bean.Data;
-import com.example.adddata.Mapper.DataMapper;
 import com.example.adddata.Service.DataService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
+@Slf4j
 public class DataController {
 
     @Autowired
@@ -17,7 +17,7 @@ public class DataController {
     @GetMapping("/")
     public String data(Model model){
         String data = dataService.getData();
-        System.out.println(data);
+        log.info(data);
         model.addAttribute("data",data);
         return "index";
     }
